@@ -1,0 +1,35 @@
+{
+  "name": "fq-trace",
+  "version": "1.0.12",
+  "description": "This is a base library",
+  "keywords": [
+    "fq",
+    "trace"
+  ],
+  "main": "dist/bundle.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ImagineZzf/fq-trace.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@rollup/plugin-typescript": "^8.3.4",
+    "@types/node": "^18.7.23",
+    "rollup": "^2.78.0",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
