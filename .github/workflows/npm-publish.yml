@@ -5,7 +5,7 @@ name: Node.js Package
 
 on:
   push:
-    branches: [master]
+    branches: [main]
 
 jobs:
   build-npm:
@@ -24,10 +24,3 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          
-      - name: deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.3
-        with:
-          branch: gh-pages
-          folder: docs/.vuepress/dist
-          token: "${{ secrets.DEPLOY_TOKEN }}"
