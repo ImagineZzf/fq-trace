@@ -19,7 +19,7 @@ jobs:
           node-version: '16.13.2'
           registry-url: https://registry.npmjs.org/
 
-      - run: npm install -g pnpm
+      - run: npm install -g pnpm@7.33.7
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build
       - run: npm publish
